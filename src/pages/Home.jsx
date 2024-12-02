@@ -1,1 +1,5 @@
-export const Home = () => {};
+export const Home = () => {
+    return <div >
+        <h1 className="text-black">Home Page</h1>
+    </div>
+};

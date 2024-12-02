@@ -1,1 +1,5 @@
-export const Blogs = () => {};
+export const Blogs = () => {
+    return <div>
+        Blogs
+    </div>
+};
