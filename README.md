@@ -4,8 +4,8 @@
 ### TODO !!
 
 - [x] Enviroment Setup  
-- [ ] Make the Navbar
-- [ ] Routing to Pages
+- [x] Make the Navbar
+- [x] Routing to Pages
 - [ ] Home Page Component (About me, Certifcates) 
 - [ ] Home Page Content
 - [ ] Projects page 
