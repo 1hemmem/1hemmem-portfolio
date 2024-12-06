@@ -3,17 +3,21 @@ import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
+import { Footer } from "./components/Footer";
 function App() {
   return (
-    <div>
+    <div className=" min-h-screen text-white">
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="Projects" element={<Projects />} />
-          <Route path="/Blogs" element={<Blogs />} />
-        </Routes>
+        <div className="max-w-3xl mx-auto flex justify-between items-center px-4">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="Projects" element={<Projects />} />
+            <Route path="/Blogs" element={<Blogs />} />
+          </Routes>
+        </div>
       </BrowserRouter>
+      <Footer/>
     </div>
   );
 }
