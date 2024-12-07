@@ -93,7 +93,7 @@
                 "score": "70%"
             },
             {
-                "name": "scikit-learn",
+                "name": "Scikit-Learn",
                 "level":"Pro",
                 "score": "85%"
             }
@@ -118,6 +118,11 @@
                 "name": "Docker",
                 "level":"Advanced",
                 "score": "70%"
+            },
+            {
+                "name": "Vim",
+                "level":"Intermediate",
+                "score": "50%"
             }
         ]
     }

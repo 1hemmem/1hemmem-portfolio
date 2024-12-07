@@ -27,18 +27,18 @@ export const SkillCard = (props) => {
           />
         </svg>
       </button>
-      <div className="">
+      <div className="text-gray-300">
       {opened && (
         <>
           {props.Scores.map((val, indx) => (
             <div key={indx}>
               <div className="relative">
                 <span>{val.name}</span>
-                <span className="mb-1 text-base font-medium dark:text-white absolute right-0">
+                <span className="mb-1 text-base font-medium absolute right-0">
                   {val.level}
                 </span>
               </div>
-              <div className="w-full bg-gray-200 rounded-full h-1.5 mb-4 dark:bg-gray-700 left-0">
+              <div className="w-full rounded-full h-1.5 mb-4 dark:bg-gray-700 left-0">
                 <div
                   className="bg-white h-1.5 rounded-full dark:bg-white"
                   style={{ width: val.score }}
