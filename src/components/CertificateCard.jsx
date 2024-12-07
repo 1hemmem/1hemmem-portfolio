@@ -77,16 +77,14 @@ export const CertificateCard = (props) => {
           ))}
           <br />
           Skills Aquired: <br />
-          <ul>
-            {props.Skills.map((val, index) => (
-              <li
-                className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-2xl shadow-md text-sm"
-                key={index}
-              >
-                {val}
-              </li>
-            ))}
-          </ul>
+          {props.Skills.map((val, index) => (
+            <li
+              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-2xl shadow-md text-sm"
+              key={index}
+            >
+              {val}
+            </li>
+          ))}
         </p>
       )}
     </div>
