@@ -8,8 +8,9 @@ function App() {
   return (
     <div className="min-h-screen text-white">
       <BrowserRouter>
-        <Navbar />
-
+        <div className="sticky top-0 bg:blur-sm">
+          <Navbar />
+        </div>
         <div className="max-w-3xl mx-auto flex justify-between items-center px-4">
           <Routes>
             <Route path="/" element={<Home />} />
