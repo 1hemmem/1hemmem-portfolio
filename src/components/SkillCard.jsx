@@ -7,7 +7,7 @@ export const SkillCard = (props) => {
     <div className="flex flex-col">
       <button
         onClick={() => setOpened(!opened)}
-        className="text-xl font-bold flex items-center mb-2 hover:text-gray-300"
+        className="text-xl font-bold flex items-center mb-2 hover:text-gray-600 text-black dark:text-white dark:hover:text-gray-300"
       >
         <span className="mr-2">{props.Type}</span>
         <svg
@@ -27,7 +27,7 @@ export const SkillCard = (props) => {
           />
         </svg>
       </button>
-      <div className="text-gray-300">
+      <div className="text-gray-800 dark:text-gray-300">
       {opened && (
         <>
           {props.Scores.map((val, indx) => (
@@ -38,9 +38,9 @@ export const SkillCard = (props) => {
                   {val.level}
                 </span>
               </div>
-              <div className="w-full rounded-full h-1.5 mb-4 dark:bg-gray-700 left-0">
+              <div className="w-full rounded-full h-1.5 mb-4 bg-gray-300 dark:bg-gray-700 left-0">
                 <div
-                  className="bg-white h-1.5 rounded-full dark:bg-white"
+                  className="bg-black h-1.5 rounded-full dark:bg-white"
                   style={{ width: val.score }}
                 ></div>
               </div>

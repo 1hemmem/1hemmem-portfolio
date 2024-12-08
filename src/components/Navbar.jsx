@@ -3,7 +3,7 @@ import DarkModeToggle from "./DarkModeToggle";
 
 export const Navbar = () => {
   return (
-    <nav className="max-w-3xl mx-auto flex justify-between items-center px-4 py-4 dark:bg-zinc-900">
+    <nav className="max-w-3xl mx-auto flex justify-between items-center px-2 py-4 bg-gray-100 dark:bg-zinc-900">
       {/* Logo Section */}
       <div className="font-bold text-lg dark:text-white">
         <a href="/">Hemmem CH.</a>

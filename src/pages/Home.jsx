@@ -11,8 +11,6 @@ export const Home = () => {
       <Skills/>
       {/* Certificate */}
       <Certifications/>
-      {/* Projects */}
-      {/* <Projects/> */}
     </div>
   );
 };

@@ -6,16 +6,16 @@ export const ProjectCard = (props) => {
       <div className="relative block max-w-s p-5 border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
         <div className="relative">
           <img
-            className="h-7 w-7 invert opacity-60 hover:opacity-100 absolute top-0 right-0"
+            className="h-7 w-7 dark:invert opacity-60 hover:opacity-100 absolute top-0 right-0"
             src={img}
             alt="Link icon"
           />
-          <h1 className="text-white font-bold text-2xl mb-3">{props.Title}</h1>
+          <h1 className="text-black dark:text-white font-bold text-2xl mb-3">{props.Title}</h1>
         </div>
-        <p className="text-gray-300 text-sm mb-3">{props.Description}</p>
+        <p className="text-gray-800 dark:text-gray-300 text-sm mb-3">{props.Description}</p>
         {props.Technologies.map((value, index) => (
           <li
-            className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-md shadow-md text-sm"
+            className="inline-block p-1.5 m-1 bg-gray-200 text-black dark:bg-neutral-800 dark:text-white rounded-md shadow-md text-sm"
             key={index}
           >
             {value}

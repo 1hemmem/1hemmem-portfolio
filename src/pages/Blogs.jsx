@@ -10,13 +10,13 @@ export const Blogs = () => {
       </p>
       <div className="mt-4">
         <button
-          className="px-6 py-2 dark:bg-zinc-800 dark:text-white font-semibold rounded-md shadow-md dark:hover:bg-zinc-700 transition-colors"
+          className="px-6 py-2 text-gray-800 dark:bg-zinc-800 dark:text-white font-semibold hover:font-extrabold rounded-md shadow-md dark:hover:bg-zinc-700 transition-colors"
           onClick={() => navigate("/")}
         >
           Go back to home page
         </button>
       </div>
-      <div className="absolute bottom-4 dark:text-gray-500 text-sm">
+      <div className="absolute bottom-4 text-gray-500 dark:text-gray-500 text-sm">
         Meanwhile, check back later for some exciting posts!
       </div>
     </div>

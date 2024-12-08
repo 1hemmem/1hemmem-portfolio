@@ -16,7 +16,11 @@ export const CertificateCard = (props) => {
           rel="noopener noreferrer"
           className="absolute top-0 right-0 m-2"
         >
-          <img className="h-8 w-8 invert opacity-60 hover:opacity-100" src={img} alt="Link icon" />
+          <img
+            className="h-8 w-8 opacity-50 dark:invert dark:opacity-60 hover:opacity-100 dark:hover:opacity-100"
+            src={img}
+            alt="Link icon"
+          />
         </a>
 
         {/* Top-left: SVG Icon */}
@@ -33,17 +37,13 @@ export const CertificateCard = (props) => {
       </div>
 
       {/* Content */}
-      <h5 className="mb-2 text-xl tracking-tight text-white">
-        {props.Title}
-      </h5>
-      <p className="font-normal text-gray-400">
-        From {props.From}
-      </p>
+      <h5 className="mb-2 text-xl tracking-tight text-black dark:text-white">{props.Title}</h5>
+      <p className="font-normal text-gray-600 dark:text-gray-400">From {props.From}</p>
 
       {/* Animated Show More/Less Button */}
       <button
         onClick={() => changeExpanded(!isexpanded)}
-        className="mt-2 text-sm font-semibold text-white hover:text-gray-300 flex items-center space-x-2"
+        className="mt-2 text-sm font-semibold text-black hover:text-gray-700 dark:text-white dark:hover:text-gray-300 flex items-center space-x-2"
       >
         <span>{isexpanded ? "Show less" : "Show more"}</span>
         <svg
@@ -70,7 +70,7 @@ export const CertificateCard = (props) => {
           {props.Courses.map((val, index) => (
             <li
               key={index}
-              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-md shadow-md text-sm"
+              className="inline-block p-1.5 m-1 bg-gray-200 text-black dark:bg-neutral-800 dark:text-white rounded-md shadow-md text-sm"
             >
               {val}
             </li>
@@ -79,7 +79,7 @@ export const CertificateCard = (props) => {
           Skills Aquired: <br />
           {props.Skills.map((val, index) => (
             <li
-              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-md shadow-md text-sm"
+              className="inline-block p-1.5 m-1 bg-gray-200 text-black dark:bg-neutral-800 dark:text-white rounded-md shadow-md text-sm"
               key={index}
             >
               {val}

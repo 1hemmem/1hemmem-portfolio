@@ -4,8 +4,8 @@ export const Skills = () => {
   return (
     <div className="mb-10 mt-5">
       <div className="mb-5">
-        <h1 className="text-3xl font-bold dark:text-white mb-4">Skills</h1>
-        <p className="dark:text-gray-300">
+        <h1 className="text-3xl font-bold text-black dark:text-white mb-4">Skills</h1>
+        <p className="text-gray-800 dark:text-gray-300">
           My technical & miscellaneous skills
         </p>
       </div>

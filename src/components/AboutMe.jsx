@@ -13,8 +13,8 @@ export const AboutMe = () => {
       </section>
       <h1 className="text-3xl font-bold">Assalamu Alaikum, I’m Hemmem 👋</h1>
       <br />
-      <div className="dark:text-gray-300">
-        <p className="text-base font-sans">
+      <div className="text-gray-800 dark:text-gray-300">
+        <p className= "text-base font-sans">
           I’m an AI developer with robust backend expertise, driven by a passion
           for solving complex problems using cutting-edge technologies. I am a
           solution-oriented learner, I learn as much as I need to get the job
