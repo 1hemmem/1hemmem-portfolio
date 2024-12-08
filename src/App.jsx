@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Navbar } from "./components/Navbar";
 import { Home } from "./pages/Home";
@@ -7,7 +6,7 @@ import { Blogs } from "./pages/Blogs";
 import { Footer } from "./components/Footer";
 function App() {
   return (
-    <div className="min-h-screen text-white">
+    <div className="min-h-screen dark:text-white ">
       <BrowserRouter>
         <div className="sticky top-0 bg:blur-sm">
           <Navbar />

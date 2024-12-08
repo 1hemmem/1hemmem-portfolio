@@ -4,8 +4,8 @@ import projectsdata from "../data/projects.json";
 export const Projects = () => {
   return (
     <div className="mb-16">
-      <h1 className="text-3xl font-bold text-white mt-16 mb-4">Projects</h1>
-      <p className="text-white/70 mb-10 max-w-xl">
+      <h1 className="text-3xl font-bold dark:text-white mt-16 mb-4">Projects</h1>
+      <p className="dark:text-white/70 mb-10 max-w-xl">
         Projects are my go-to for learning new technologies and applying them. 
         Each project represents a journey of exploration and skill-building.
       </p>
