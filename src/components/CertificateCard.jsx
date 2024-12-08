@@ -33,10 +33,10 @@ export const CertificateCard = (props) => {
       </div>
 
       {/* Content */}
-      <h5 className="mb-2 text-xl tracking-tight text-gray-900 dark:text-white">
+      <h5 className="mb-2 text-xl tracking-tight text-white">
         {props.Title}
       </h5>
-      <p className="font-normal text-gray-700 dark:text-gray-400">
+      <p className="font-normal text-gray-400">
         From {props.From}
       </p>
 
