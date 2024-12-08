@@ -6,7 +6,7 @@ export const CertificateCard = (props) => {
   const [isexpanded, changeExpanded] = useState(false);
 
   return (
-    <div className="relative block max-w-s p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
+    <div className="relative block max-w-s p-5  border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
       {/* Positioned Icons */}
       <div className="relative h-12 mb-2">
         {/* Top-right: Link */}

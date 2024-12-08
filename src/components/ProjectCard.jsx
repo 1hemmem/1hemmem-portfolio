@@ -3,7 +3,7 @@ import img from "../assets/link.png";
 export const ProjectCard = (props) => {
   return (
     <a href={props.Link} target="_blank">
-      <div className="relative block max-w-s p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
+      <div className="relative block max-w-s p-5 border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
         <div className="relative">
           <img
             className="h-7 w-7 invert opacity-60 hover:opacity-100 absolute top-0 right-0"
