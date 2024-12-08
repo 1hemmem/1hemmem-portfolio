@@ -6,9 +6,9 @@ export const CertificateCard = (props) => {
   const [isexpanded, changeExpanded] = useState(false);
 
   return (
-    <div className="relative block max-w-xs p-4  bg-white border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
+    <div className="relative block max-w-s p-5 bg-white border border-gray-200 rounded-lg shadow dark:bg-zinc-900 dark:border-gray-700">
       {/* Positioned Icons */}
-      <div className="relative h-12">
+      <div className="relative h-12 mb-2">
         {/* Top-right: Link */}
         <a
           href={props.Url}
@@ -16,7 +16,7 @@ export const CertificateCard = (props) => {
           rel="noopener noreferrer"
           className="absolute top-0 right-0 m-2"
         >
-          <img className="h-8 w-8 invert" src={img} alt="Link icon" />
+          <img className="h-8 w-8 invert opacity-60 hover:opacity-100" src={img} alt="Link icon" />
         </a>
 
         {/* Top-left: SVG Icon */}
@@ -43,7 +43,7 @@ export const CertificateCard = (props) => {
       {/* Animated Show More/Less Button */}
       <button
         onClick={() => changeExpanded(!isexpanded)}
-        className="mt-2 text-sm font-semibold text-white hover:underline flex items-center space-x-2"
+        className="mt-2 text-sm font-semibold text-white hover:text-gray-300 flex items-center space-x-2"
       >
         <span>{isexpanded ? "Show less" : "Show more"}</span>
         <svg
@@ -70,7 +70,7 @@ export const CertificateCard = (props) => {
           {props.Courses.map((val, index) => (
             <li
               key={index}
-              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-2xl shadow-md text-sm"
+              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-md shadow-md text-sm"
             >
               {val}
             </li>
@@ -79,7 +79,7 @@ export const CertificateCard = (props) => {
           Skills Aquired: <br />
           {props.Skills.map((val, index) => (
             <li
-              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-2xl shadow-md text-sm"
+              className="inline-block p-1.5 m-1 bg-neutral-800 text-white rounded-md shadow-md text-sm"
               key={index}
             >
               {val}

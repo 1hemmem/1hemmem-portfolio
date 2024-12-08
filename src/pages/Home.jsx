@@ -1,6 +1,7 @@
 import { AboutMe } from "../components/AboutMe";
 import { Certifications } from "../components/Certifications";
 import { Skills } from "../components/Skills";
+// import { Projects } from "./Projects";
 export const Home = () => {
   return (
     <div className="pt-10 p-1">
@@ -10,8 +11,8 @@ export const Home = () => {
       <Skills/>
       {/* Certificate */}
       <Certifications/>
-      {/* Skills */}
-
+      {/* Projects */}
+      {/* <Projects/> */}
     </div>
   );
 };

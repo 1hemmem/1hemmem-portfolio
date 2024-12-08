@@ -6,9 +6,10 @@ import { Blogs } from "./pages/Blogs";
 import { Footer } from "./components/Footer";
 function App() {
   return (
-    <div className=" min-h-screen text-white">
+    <div className="min-h-screen text-white">
       <BrowserRouter>
         <Navbar />
+
         <div className="max-w-3xl mx-auto flex justify-between items-center px-4">
           <Routes>
             <Route path="/" element={<Home />} />
@@ -17,7 +18,7 @@ function App() {
           </Routes>
         </div>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

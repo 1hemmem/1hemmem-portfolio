@@ -7,7 +7,7 @@ export const SkillCard = (props) => {
     <div >
       <button
         onClick={() => setOpened(!opened)}
-        className="text-xl font-bold flex items-center mb-4"
+        className="text-xl font-bold flex items-center mb-4 hover:text-gray-300"
       >
         <span className="mr-2">{props.Type}</span>
         <svg

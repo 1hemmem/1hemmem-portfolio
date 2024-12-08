@@ -11,7 +11,7 @@ export const AboutMe = () => {
           <Connect />
         </div>
       </section>
-      <h1 className="text-2xl font-bold">Assalamu Alaikum, I’m Hemmem 👋</h1>
+      <h1 className="text-3xl font-bold">Assalamu Alaikum, I’m Hemmem 👋</h1>
       <br />
       <div className="text-gray-300">
         <p className="text-base font-sans">
