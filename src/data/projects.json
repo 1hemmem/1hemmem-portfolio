@@ -8,7 +8,7 @@
     {
         "Title": "Algerian License Plate Recegnition System",
         "Description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
-        "Technologies": ["Python","OpenCv","Yolo","Bash Scripting","Deep Sort"],
+        "Technologies": ["Python","OpenCv","Yolo","Bash Scripting","Asyncio","Gemini Api"],
         "Link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
 
     },

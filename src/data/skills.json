@@ -60,7 +60,12 @@
             {
                 "name": "Postgresql",
                 "level":"Advanced",
-                "score": "75%"
+                "score": "70%"
+            },
+            {
+                "name": "Mysql",
+                "level":"Advanced",
+                "score":"70%"
             },
             {
                 "name": "Node.Js",

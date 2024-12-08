@@ -4,9 +4,10 @@ import { Home } from "./pages/Home";
 import { Projects } from "./pages/Projects";
 import { Blogs } from "./pages/Blogs";
 import { Footer } from "./components/Footer";
+
 function App() {
   return (
-    <div className="min-h-screen dark:text-white ">
+    <div className="min-h-screen dark:text-white">
       <BrowserRouter>
         <div className="sticky top-0 bg:blur-sm">
           <Navbar />
@@ -20,7 +21,6 @@ function App() {
         </div>
       </BrowserRouter>
       <Footer />
-      
     </div>
   );
 }

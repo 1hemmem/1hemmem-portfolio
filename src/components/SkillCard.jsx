@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 export const SkillCard = (props) => {
   const [opened, setOpened] = useState(false);
   return (
-    <div >
+    <div className="flex flex-col">
       <button
         onClick={() => setOpened(!opened)}
-        className="text-xl font-bold flex items-center mb-4 hover:text-gray-300"
+        className="text-xl font-bold flex items-center mb-2 hover:text-gray-300"
       >
         <span className="mr-2">{props.Type}</span>
         <svg
