@@ -16,7 +16,7 @@ const DarkModeToggle = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 dark:bg-zinc-900 transition-colors"
+      className="p-2 dark:bg-zinc-900"
     >
       {theme === 'dark' ? (
         <Sun className="text-white" size={20} />
