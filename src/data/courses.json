@@ -38,5 +38,28 @@
                 "Transformers"
             ]
         }
+    },
+    {
+        "Title": "Intro to LangGraph",
+        "Url": "https://academy.langchain.com/certificates/rbapqdch4r",
+        "From": "LangChain Academy",
+        "Details": {
+            "Courses": [
+                "Building Custom Workflows",
+                "Using StateGraph for Conversation Routing",
+                "Long and short term memory",
+                "Integrating External APIs",
+                "Optimizing for Large-Scale Applications"
+            ],
+            "Skills": [
+                "LangGraph",
+                "StateGraph",
+                "Conversational AI",
+                "Workflow Design",
+                "API Integration",
+                "Large-Scale System Optimization"
+            ]
+        }
     }
+    
 ]
