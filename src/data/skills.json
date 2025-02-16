@@ -1,0 +1,136 @@
+[
+    {
+        "Type": "Programming",
+        "Scores": [
+            {
+                "name": "C",
+                "level": "Intermediate",
+                "score": "50%"
+            },
+            {
+                "name": "Javascript",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "Python",
+                "level":"Pro",
+                "score": "85%"
+            },
+            {
+                "name": "SQL",
+                "level":"Advanced",
+                "score": "70%"
+            }
+        ]
+    },
+    {
+        "Type": "Front end",
+        "Scores": [
+            {
+                "name": "HTML, CSS",
+                "level": "Intermediate",
+                "score": "70%"
+            },
+            {
+                "name": "Tailwind",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "ReactJs",
+                "level":"Pro",
+                "score": "85%"
+            }
+        ]
+    },
+    {
+        "Type": "Back end",
+        "Scores": [
+            {
+                "name": "Python",
+                "level": "Pro",
+                "score": "85%"
+            },
+            {
+                "name": "FastApi",
+                "level": "Pro",
+                "score": "85%"
+            },
+            {
+                "name": "Postgresql",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "Mysql",
+                "level":"Advanced",
+                "score":"70%"
+            },
+            {
+                "name": "Node.Js",
+                "level":"Intermediate",
+                "score": "50%"
+            }
+        ]
+    },
+    {
+        "Type": "Artificial Intelligence",
+        "Scores": [
+            {
+                "name": "Pytorch",
+                "level": "Pro",
+                "score": "85%"
+            },
+            {
+                "name": "TensorFlow",
+                "level": "Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "OpenCV",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "LangChain",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "Scikit-Learn",
+                "level":"Pro",
+                "score": "85%"
+            }
+            
+            
+        ]
+    },
+    {
+        "Type": "Dev Tools",
+        "Scores": [
+            {
+                "name": "Linux",
+                "level": "Pro",
+                "score": "85%"
+            },
+            {
+                "name": "Git",
+                "level": "Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "Docker",
+                "level":"Advanced",
+                "score": "70%"
+            },
+            {
+                "name": "Vim",
+                "level":"Intermediate",
+                "score": "50%"
+            }
+        ]
+    }
+
+
+]

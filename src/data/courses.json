@@ -1,0 +1,65 @@
+[
+    {
+        "Title": "Machine Learning Specialization",
+        "Url": "https://www.coursera.org/account/accomplishments/specialization/EDM3TSS03B82",
+        "From": "Stanford University & DeepLearning.AI",
+        "Details": {
+            "Courses": [
+                "Supervised Machine Learning: Regression and Classification",
+                "Advanced Learning Algorithms",
+                "Unsupervised Learning, Recommenders, Reinforcement Learning"    
+            ],
+            "Skills": [
+                "Logistic Regression",
+                "Artificial Neural Network",
+                "Linear Regression",
+                "Decision Trees",
+                "Recommender Systems"
+            ]
+        }
+    },
+    {
+        "Title": "Deep Learning Specialization",
+        "Url": "https://www.coursera.org/account/accomplishments/specialization/GCIP5SKQDHWX",
+        "From": "DeepLearning.AI",
+        "Details": {
+            "Courses": [
+                "Sequence Models",
+                "Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization",
+                "Neural Networks and Deep Learning",
+                "Convolutional Neural Networks",
+                "Structuring Machine Learning Projects"
+            ],
+            "Skills": [
+                "Recurrent Neural Network",
+                "Tensorflow",
+                "Convolutional Neural Network",
+                "Artificial Neural Network",
+                "Transformers"
+            ]
+        }
+    },
+    {
+        "Title": "Intro to LangGraph",
+        "Url": "https://academy.langchain.com/certificates/rbapqdch4r",
+        "From": "LangChain Academy",
+        "Details": {
+            "Courses": [
+                "Building Custom Workflows",
+                "Using StateGraph for Conversation Routing",
+                "Long and short term memory",
+                "Integrating External APIs",
+                "Optimizing for Large-Scale Applications"
+            ],
+            "Skills": [
+                "LangGraph",
+                "StateGraph",
+                "Conversational AI",
+                "Workflow Design",
+                "API Integration",
+                "Large-Scale System Optimization"
+            ]
+        }
+    }
+    
+]
