@@ -1,6 +1,7 @@
 ---
+import Footer from "@/components/Footer.astro";
 import NavBar from "../components/NavBar.jsx";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 ---
 
 <!doctype html>
@@ -11,12 +12,15 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 		<meta name="generator" content={Astro.generator} />
 		<title>{Astro.props.title}</title>
 	</head>
-	<body class="">
+	<body class="font-mono min-h-screen flex flex-col max-w-3xl mx-auto">
 		<div class="sticky top-0 z-10 bg-white/50 backdrop-blur-xl">
 			<NavBar client:visible />
 		</div>
-		<div class="max-w-3xl mx-auto">
-		<slot />
-	</div>
+	
+		<div class="flex-grow">
+			<slot />
+		</div>
+	
+		<Footer class=""/>
 	</body>
-</html>
+	</html>

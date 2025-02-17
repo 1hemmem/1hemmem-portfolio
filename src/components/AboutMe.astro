@@ -1,8 +1,11 @@
 ---
+import { Certifications } from "./Certifications";
+import { Skills } from "./Skills";
+
 
 ---
 
-<div class="pb-10">
+<div class="p-4">
 	<section class="flex items-center justify-between mb-10">
 		<div>
 			<img
@@ -12,13 +15,12 @@
 			/>
 		</div>
 		<div class="flex flex-col space-y-4 items-start">
-			<!-- <Connect /> -->
 		</div>
 	</section>
 	<h1 class="text-3xl font-bold">Assalamu Alaikum, I’m Hemmem 👋</h1>
 	<br />
-	<div class="text-gray-800 dark:text-gray-300">
-		<p class="text-base font-sans">
+	<div class="text-gray-800 dark:text-gray-300 text-justify">
+		<p class="text-base font-mono ">
 			I’m an AI developer with robust backend expertise, driven by a
 			passion for solving complex problems using cutting-edge
 			technologies. I am a solution-oriented learner, I learn as much as I
@@ -31,4 +33,6 @@
 			>
 		</p>
 	</div>
+	<Skills client:load />
+	<Certifications client:load />
 </div>

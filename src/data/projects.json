@@ -14,7 +14,7 @@
     },
     {
         "Title": "1hemmem",
-        "Description": "This amazing website you are in",
+        "Description": "This website you are in.",
         "Technologies": ["javascript","React","Tailwind","Vercel"],
         "Link": "https://github.com/1hemmem/1hemmem-portfolio"
     }

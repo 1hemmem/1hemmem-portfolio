@@ -10,28 +10,33 @@ export default function NavBar() {
   const isActive = (path) => path === activePath;
 
   return (
-    <nav className=" flex items-center justify-center gap-x-6 text-lg md:text-xl font-semibold p-5">
-      <a
-        href="/"
-        className={`hover:text-[#87c19c] transition-colors duration-300 ${isActive("/") ? "font-bold text-[#16a34a]" : ""
-          }`}
-      >
-        Home
-      </a>
-      <a
-        href="/projects"
-        className={`hover:text-gray-800 transition-colors duration-300 ${isActive("/projects") ? "font-bold text-[#16a34a]" : ""
-          }`}
-      >
-        Projects
-      </a>      
-      <a
-        href="/blogs"
-        className={`hover:text-gray-800 transition-colors duration-300 ${isActive("/blogs") ? "font-bold text-[#16a34a]" : ""
-          }`}
-      >
-        Blogs
-      </a>
-    </nav>
+    <div className="flex items-center justify-between">
+      <nav className="flex justify-start gap-x-6 text-base font-semibold p-3">
+        <a
+          href="/"
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/") ? "font-bold text-black underline" : ""
+            }`}
+        >
+          Home
+        </a>
+        <a
+          href="/projects"
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/projects") ? "font-bold text-black underline" : ""
+            }`}
+        >
+          Projects
+        </a>
+        <a
+          href="/blogs"
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/blogs") ? "font-bold text-black underline" : ""
+            }`}
+        >
+          Blogs
+        </a>
+      </nav>
+      <div className=" justify-end gap-x-6 text-base">
+            {/* icon */}
+      </div>
+    </div>
   );
 }
