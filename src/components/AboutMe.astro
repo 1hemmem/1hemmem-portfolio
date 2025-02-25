@@ -1,6 +1,7 @@
 ---
 import { Certifications } from "./Certifications";
 import { Skills } from "./Skills";
+import hemmemImage from "../../public/hemmem.jpg";
 
 
 ---
@@ -9,9 +10,10 @@ import { Skills } from "./Skills";
 	<section class="flex items-center justify-between mb-10">
 		<div>
 			<img
-				src="../../public/hemmem.jpg"
+				src={hemmemImage.src}
 				loading="lazy"
 				class="rounded-full w-32"
+				alt="Hemmem's profile picture"
 			/>
 		</div>
 		<div class="flex flex-col space-y-4 items-start">
