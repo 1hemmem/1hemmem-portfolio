@@ -4,10 +4,17 @@ import { defineConfig } from 'astro/config';
 import react from '@astrojs/react';
 
 import tailwind from '@astrojs/tailwind'
+import vercelServerless from '@astrojs/vercel/serverless';
 
 import vercel from '@astrojs/vercel';
 
 export default defineConfig({
+  output: 'server',
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+  }),
   server: {
     host: true,
     port: 4321 
@@ -17,5 +24,5 @@ export default defineConfig({
     applyBaseStyles: false,
   })],
 
-  adapter: vercel()
+  // adapter: vercel()
 });
