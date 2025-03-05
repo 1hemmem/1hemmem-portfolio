@@ -1,21 +1,48 @@
 [
-    {
-        "Title": "Make It Yourself",
-        "Description": "A web application that enables you to make your own domain expert chatbot.",
-        "Technologies": ["Ollama", "Python","FastApi", "React", "Langchain", "Transformers", "Ngrok"],
-        "Link": "https://github.com/1hemmem/make-it-yourself"
-    },
-    {
-        "Title": "Algerian License Plate Recegnition System",
-        "Description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
-        "Technologies": ["Python","OpenCv","Yolo","Bash Scripting","Asyncio","Gemini Api"],
-        "Link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
-
-    },
-    {
-        "Title": "1hemmem",
-        "Description": "This website you are in.",
-        "Technologies": ["javascript","React","Tailwind","Vercel"],
-        "Link": "https://github.com/1hemmem/1hemmem-portfolio"
-    }
+  {
+    "Title": "Make It Yourself",
+    "Description": "A web application that enables you to make your own domain expert chatbot.",
+    "Technologies": [
+      "Ollama",
+      "Python",
+      "FastApi",
+      "React",
+      "Langchain",
+      "Transformers",
+      "Ngrok"
+    ],
+    "Link": "https://github.com/1hemmem/make-it-yourself"
+  },
+  {
+    "Title": "Algerian License Plate Recegnition System",
+    "Description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
+    "Technologies": [
+      "Python",
+      "OpenCv",
+      "Yolo",
+      "Bash Scripting",
+      "Asyncio",
+      "Gemini Api"
+    ],
+    "Link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
+  },
+  {
+    "Title": "Real-Time Collaboration Platform",
+    "Description": "A web application that enable users to collaborate and share documents in real time.",
+    "Technologies": [
+      "Typescript",
+      "NextJs",
+      "Tailwind",
+      "Shadcn",
+      "Liveblocks",
+      "Supabase"
+    ],
+    "Link": "https://github.com/1hemmem/1hemmem-portfolio"
+  },
+  {
+    "Title": "1hemmem",
+    "Description": "This website you are in.",
+    "Technologies": ["javascript", "React", "Tailwind", "Vercel"],
+    "Link": "https://github.com/1hemmem/1hemmem-portfolio"
+  }
 ]

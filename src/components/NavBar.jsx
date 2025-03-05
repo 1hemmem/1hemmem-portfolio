@@ -14,29 +14,30 @@ export default function NavBar() {
       <nav className="flex justify-start gap-x-6 text-base font-semibold p-3">
         <a
           href="/"
-          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/") ? "font-bold text-black underline" : ""
-            }`}
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${
+            isActive("/") ? "font-bold text-black underline" : ""
+          }`}
         >
           Home
         </a>
         <a
           href="/projects"
-          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/projects") ? "font-bold text-black underline" : ""
-            }`}
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${
+            isActive("/projects") ? "font-bold text-black underline" : ""
+          }`}
         >
           Projects
         </a>
         <a
           href="/blogs"
-          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${isActive("/blogs") ? "font-bold text-black underline" : ""
-            }`}
+          className={`hover:text-gray-800 hover:underline transition-colors duration-500 ${
+            isActive("/blogs") ? "font-bold text-black underline" : ""
+          }`}
         >
           Blogs
         </a>
       </nav>
-      <div className=" justify-end gap-x-6 text-base">
-            {/* icon */}
-      </div>
+      <div className=" justify-end gap-x-6 text-base">{/* icon */}</div>
     </div>
   );
 }

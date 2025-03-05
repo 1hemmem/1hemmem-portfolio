@@ -10,7 +10,9 @@ const SkillCard = (props) => {
   return (
     <div className="flex flex-col">
       <AccordionItem value={props.Type}>
-        <AccordionTrigger className="text-base font-semibold hover:text-muted-foreground underline">{props.Type}</AccordionTrigger>
+        <AccordionTrigger className="text-base font-semibold hover:text-muted-foreground underline">
+          {props.Type}
+        </AccordionTrigger>
         <AccordionContent>
           <div className="text-gray-800 hover:text-muted-foreground dark:text-gray-300">
             {
@@ -50,7 +52,6 @@ SkillCard.propTypes = {
     })
   ).isRequired,
 };
-
 
 import skillsdata from "../data/skills.json";
 export const Skills = () => {

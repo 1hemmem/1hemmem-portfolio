@@ -1,4 +1,4 @@
-import {VisuallyHidden, useSwitch} from "@heroui/react";
+import { VisuallyHidden, useSwitch } from "@heroui/react";
 
 export const MoonIcon = (props) => {
   return (
@@ -39,8 +39,14 @@ export const SunIcon = (props) => {
 };
 
 export const ThemeSwitch = (props) => {
-  const {Component, slots, isSelected, getBaseProps, getInputProps, getWrapperProps} =
-    useSwitch(props);
+  const {
+    Component,
+    slots,
+    isSelected,
+    getBaseProps,
+    getInputProps,
+    getWrapperProps,
+  } = useSwitch(props);
 
   return (
     <div className="flex flex-col gap-2">
@@ -61,7 +67,9 @@ export const ThemeSwitch = (props) => {
           {isSelected ? <SunIcon /> : <MoonIcon />}
         </div>
       </Component>
-      <p className="text-default-500 select-none">Lights: {isSelected ? "on" : "off"}</p>
+      <p className="text-default-500 select-none">
+        Lights: {isSelected ? "on" : "off"}
+      </p>
     </div>
   );
 };
