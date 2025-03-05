@@ -1,15 +1,14 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
+import { defineConfig } from "astro/config";
 
-import react from '@astrojs/react';
+import react from "@astrojs/react";
 
-import tailwind from '@astrojs/tailwind'
-import vercelServerless from '@astrojs/vercel/serverless';
+import tailwind from "@astrojs/tailwind";
 
-import vercel from '@astrojs/vercel';
+import vercel from "@astrojs/vercel";
 
 export default defineConfig({
-  output: 'server',
+  output: "server",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
@@ -17,12 +16,15 @@ export default defineConfig({
   }),
   server: {
     host: true,
-    port: 4321 
+    port: 4321,
   },
 
-  integrations: [react(), tailwind({
-    applyBaseStyles: false,
-  })],
+  integrations: [
+    react(),
+    tailwind({
+      applyBaseStyles: false,
+    }),
+  ],
 
   // adapter: vercel()
 });
