@@ -1,6 +1,7 @@
 ---
 import { Certifications } from "./Certifications";
 import { Skills } from "./Skills";
+import { Tools } from "./Tools";
 import hemmemImage from "../../public/hemmem.jpg";
 ---
 
@@ -30,6 +31,9 @@ import hemmemImage from "../../public/hemmem.jpg";
         exciting topics.</span
       >
     </p>
+  </div>
+  <div class="py-10">
+    <Tools client:load />
   </div>
   <Skills client:load />
   <Certifications client:load />
