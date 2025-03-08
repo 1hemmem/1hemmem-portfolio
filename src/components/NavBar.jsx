@@ -16,7 +16,7 @@ export default function NavBar() {
           <img
             src={image.src}
             loading="lazy"
-            className="rounded-full w-6 mr-2"
+            className="rounded-full w-6 mr-2 hover:border"
             alt="Hemmem's profile picture"
           />
           <p> 1hemmem</p>
