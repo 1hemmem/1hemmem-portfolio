@@ -1,30 +1,46 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig } from 'astro/config';
 
-import react from "@astrojs/react";
 
-import tailwind from "@astrojs/tailwind";
+import react from '@astrojs/react';
 
-import vercel from "@astrojs/vercel";
+import tailwind from '@astrojs/tailwind';
 
+// https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
-  server: {
-    host: true,
-    port: 4321,
-  },
+    site: 'https://example.com',
+    integrations: [ react(), tailwind({
+        applyBaseStyles: false,
+    }),],
 
-  integrations: [
-    react(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
+})
+// // @ts-check
+// import { defineConfig } from "astro/config";
 
-  // adapter: vercel()
-});
+// import react from "@astrojs/react";
+
+// import tailwind from "@astrojs/tailwind";
+
+// import vercel from "@astrojs/vercel";
+
+// export default defineConfig({
+//   output: "server",
+//   adapter: vercel({
+//     webAnalytics: {
+//       enabled: true,
+//     },
+//   }),
+//   server: {
+//     host: true,
+//     port: 4321,
+//   },
+
+//   integrations: [
+//     react(),
+//     tailwind({
+//       applyBaseStyles: false,
+//     }),
+//   ],
+
+//   // adapter: vercel()
+// });
