@@ -5,7 +5,7 @@ function ProjectCard(props) {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold text-white  mb-4">{props.Title}</h1>
+        <h1 className="text-2xl font-bold text-white mb-2">{props.Title}</h1>
       </div>
       <p className="text-gray-300 text-sm mb-3">{props.Description}</p>
       {props.Technologies.map((value, index) => (
