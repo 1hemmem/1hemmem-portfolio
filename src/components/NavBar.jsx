@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import image from "../../public/hemmem.jpg";
+import image from "../assets/hemmem.jpg";
 export default function NavBar() {
   const [activePath, setActivePath] = useState("/");
 
@@ -14,7 +14,7 @@ export default function NavBar() {
       <a href="/">
         <div className="flex justify-start items-center">
           <img
-            src={image.src}
+            src={image?.src}
             loading="lazy"
             className="rounded-full w-6 mr-2 hover:border"
             alt="Hemmem's profile picture"
@@ -38,15 +38,7 @@ export default function NavBar() {
           }`}
         >
           Projects
-        </a>
-        <a
-          href="/blogs"
-          className={`hover:text-gray-400 hover:underline transition-colors duration-500 ${
-            isActive("/blogs") ? "font-bold text-white underline" : ""
-          }`}
-        >
-          Blogs
-        </a>
+        </a>{" "}
       </div>
     </nav>
   );
