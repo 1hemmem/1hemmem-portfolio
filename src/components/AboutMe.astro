@@ -1,36 +1,47 @@
 ---
+import Connect from "../components/Connect";
 import { Certifications } from "./Certifications";
 import { Skills } from "./Skills";
-import hemmemImage from "../../public/hemmem.jpg";
+import { Tools } from "./Tools";
+import { Button } from "../components/ui/button";
 ---
 
-<div class="p-4">
-  <section class="flex items-center justify-between mb-10">
-    <div>
-      <img
-        src={hemmemImage.src}
-        loading="lazy"
-        class="rounded-full w-32"
-        alt="Hemmem's profile picture"
-      />
+<div class="p-4 dark">
+  <section class="py-20">
+    <div class="py-10">
+      <h1 class="text-4xl font-bold pr-16">
+        A multi-disciplinary software engineer crafting your ideas into reality
+      </h1>
+      <br />
+      <div class="text-gray-300 dark:text-gray-300 text-justify">
+        <p class="text-base">
+          Whether it’s building robust backends, seamless UIs, or AI-driven
+          solutions, I bring creativity and technical expertise to every
+          project.
+          <br />
+          <br />
+          <span class="font-semibold">
+            Let’s build something amazing, together! 🚀
+          </span>
+        </p>
+      </div>
     </div>
-    <div class="flex flex-col space-y-4 items-start"></div>
-  </section>
-  <h1 class="text-3xl font-bold">Assalamu Alaikum, I’m Hemmem 👋</h1>
-  <br />
-  <div class="text-gray-800 dark:text-gray-300 text-justify">
-    <p class="text-base font-mono">
-      I’m an AI developer with robust backend expertise, driven by a passion for
-      solving complex problems using cutting-edge technologies. I am a
-      solution-oriented learner, I learn as much as I need to get the job done.
-      <br />
-      <br />
-      <span class="font-semibold"
-        >Welcome to my personal space, where I share my projects and write about
-        exciting topics.</span
+    <a href="mailto:charenbahaeddinehemmem@gmail.com">
+      <Button className="bg-white text-black hover:bg-gray-300 my-1 font-semibold"
+        >Email me</Button
       >
-    </p>
+    </a>
+    <a href="/projects">
+      <Button
+        className="bg-[#171717] text-white border-gray-700 border hover:border-gray-400 hover:bg-[#171717] my-1"
+        >See Work</Button
+      >
+    </a>
+  </section>
+  <div class="pb-20">
+    <Tools client:load />
   </div>
   <Skills client:load />
   <Certifications client:load />
+  <Connect />
 </div>

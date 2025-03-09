@@ -19,7 +19,7 @@ const CertificateCard = (props) => {
             y1="12"
             x2="19"
             y2="12"
-            class="translate-x-[10px] scale-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-hover:scale-x-100"
+            className="translate-x-[10px] scale-x-0 transition-transform duration-300 ease-in-out group-hover:translate-x-0 group-hover:scale-x-100"
           ></line>
           <polyline
             points="12 5 19 12 12 19"

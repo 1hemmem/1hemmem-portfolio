@@ -5,16 +5,16 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-[#171717]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{Astro.props.title}</title>
   </head>
-  <body class="font-mono min-h-screen flex flex-col max-w-3xl mx-auto">
+  <body class="font-mono min-h-screen flex flex-col max-w-3xl mx-auto bg-[#171717] text-white">
     <SpeedInsights />
-    <div class="sticky top-0 z-10 bg-white/50 backdrop-blur-xl">
+    <div class="sticky top-0 z-10 bg-[#171717]/50 backdrop-blur-xl">
       <NavBar client:visible />
     </div>
 

@@ -5,16 +5,12 @@ function ProjectCard(props) {
   return (
     <div>
       <div>
-        <h1 className="text-2xl font-bold dark:text-white  mb-4">
-          {props.Title}
-        </h1>
+        <h1 className="text-2xl font-bold text-white mb-2">{props.Title}</h1>
       </div>
-      <p className="text-gray-800 dark:text-gray-300 text-sm mb-3">
-        {props.Description}
-      </p>
+      <p className="text-gray-300 text-sm mb-3">{props.Description}</p>
       {props.Technologies.map((value, index) => (
         <li
-          className="inline-block p-1.5 m-1 bg-gray-200 text-black dark:bg-neutral-800 dark:text-white rounded-md shadow-md text-sm"
+          className="inline-block p-1 m-0.5 bg-gray-300 text-black dark:bg-neutral-800 dark:text-white rounded-md shadow-md text-sm"
           key={index}
         >
           {value}
@@ -25,7 +21,7 @@ function ProjectCard(props) {
       <a
         href={props.Link}
         target="_blank"
-        className="underline font-semibold text-sm flex items-center gap-2 hover:font-bold hover:text-gray-600"
+        className="underline font-semibold text-sm flex items-center gap-2 hover:font-bold hover:text-gray-300"
       >
         <svg
           aria-hidden="true"
@@ -65,10 +61,8 @@ export const Projectss = () => {
     <section className="flex items-center justify-between mb-10 p-4">
       <div className="mb-16">
         <div className="mb-20">
-          <h1 className="text-3xl font-bold dark:text-white mt-16 mb-4">
-            Projects
-          </h1>
-          <p className="dark:text-white/70 mb-10 ">
+          <h1 className="text-3xl font-bold text-white mt-16 mb-4">Projects</h1>
+          <p className="text-white/70 mb-10 ">
             Projects are my go-to for learning new technologies and applying
             them. Each project represents a journey of exploration and
             skill-building.
