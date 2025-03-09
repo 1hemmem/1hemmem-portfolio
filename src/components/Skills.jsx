@@ -40,14 +40,14 @@ export const Skills = () => {
       </div>
       <div className="flex flex-col space-y-6 md:flex-row md:space-y-0 md:space-x-6">
         {/* Navigation Sidebar */}
-        <div className="md:w-1/4">
+        <div className="md:w-1/3">
           <nav className="flex flex-col space-y-1">
             {skillsdata.map((skill, idx) => (
               <button
                 key={idx}
                 onClick={() => setActiveSkill(skill.Type)}
                 className={cn(
-                  "flex px-3 py-2 text-sm font-medium transition-colors m-0",
+                  "flex px-3 py-2 text-base font-medium transition-colors m-0",
                   activeSkill === skill.Type
                     ? "bg-primary/10 text-primary"
                     : "text-muted-foreground hover:bg-muted hover:text-foreground"
