@@ -58,9 +58,9 @@ ProjectCard.propTypes = {
 
 export const Projectss = () => {
   return (
-    <section className="flex items-center justify-between mb-10 p-4">
-      <div className="mb-16">
-        <div className="mb-20">
+    <section className="flex items-center justify-between">
+      <div className="">
+        <div className="">
           <h1 className="text-3xl font-bold text-white mt-16 mb-4">Projects</h1>
           <p className="text-white/70 mb-10 ">
             Projects are my go-to for learning new technologies and applying

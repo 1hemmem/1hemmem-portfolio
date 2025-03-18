@@ -1,4 +1,5 @@
 ---
+import Connect from "@/components/Connect";
 import Layout from "../layouts/Layout.astro";
 import "../styles/globals.css";
 import { Projectss } from "@/components/Projects";
@@ -6,4 +7,5 @@ import { Projectss } from "@/components/Projects";
 
 <Layout class="" title="Projects">
   <Projectss client:load />
+  <Connect />
 </Layout>

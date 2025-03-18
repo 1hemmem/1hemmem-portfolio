@@ -30,8 +30,8 @@ export default function Connect() {
 
   return (
     <div className="py-20">
-      <h1 className="text-3xl font-bold text-black dark:text-white mb-2">Find me here</h1>
-      <p className="text-gray-800 dark:text-gray-300 mb-6">Reach out to me on social media or via email</p>
+      <h1 className="text-3xl font-bold text-white mb-2">Find me here</h1>
+      <p className="text-gray-300 mb-6">Reach out to me on social media or via email</p>
 
       <div className="space-y-4">
         {socialLinks.map((link) => (
