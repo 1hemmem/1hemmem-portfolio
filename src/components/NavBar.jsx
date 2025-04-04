@@ -39,14 +39,14 @@ export default function NavBar() {
         >
           Projects
         </a>
-        <a
+        {/* <a
           href="/blogs"
           className={`hover:text-gray-400 hover:underline transition-colors duration-500 ${
             isActive("/blogs") ? "font-bold text-white underline" : ""
           }`}
         >
           Blogs
-        </a>
+        </a> */}
       </div>
     </nav>
   );
