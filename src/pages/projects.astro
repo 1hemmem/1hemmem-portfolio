@@ -2,12 +2,12 @@
 import Connect from "@/components/Connect";
 import Layout from "../layouts/Layout.astro";
 import "../styles/globals.css";
-import { Projectss } from "@/components/Projects";
+import ProjectsPage from "@/components/Projects.astro";
 ---
 
 <Layout class="" title="Projects">
   <div class="p-4">
-  <Projectss client:load />
-  <Connect />
+    <ProjectsPage/>
+    <Connect />
 </div>
 </Layout>
