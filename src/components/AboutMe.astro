@@ -1,9 +1,9 @@
 ---
-import Connect from "../components/Connect";
-import { Certifications } from "./Certifications";
+import Connect from './Connect.astro'
 import { Skills } from "./Skills";
 import { Tools } from "./Tools";
 import { Button } from "../components/ui/button";
+import Cert from './Certifications.astro'
 ---
 
 <div class="p-4 dark">
@@ -43,6 +43,6 @@ import { Button } from "../components/ui/button";
     <Tools client:load />
   </div>
   <Skills client:load />
-  <Certifications client:load />
-  <Connect />
+  <Cert/> 
+  <Connect/>
 </div>

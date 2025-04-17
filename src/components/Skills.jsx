@@ -29,7 +29,7 @@ export const Skills = () => {
   const [activeSkill, setActiveSkill] = useState(skillsdata[0]?.Type || "");
 
   const activeSkillData = skillsdata.find(
-    (skill) => skill.Type === activeSkill
+    (skill) => skill.Type === activeSkill,
   );
 
   return (
@@ -50,7 +50,7 @@ export const Skills = () => {
                   "flex px-3 py-2 text-base font-medium transition-colors m-0",
                   activeSkill === skill.Type
                     ? "bg-primary/10 text-primary"
-                    : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                    : "text-muted-foreground hover:bg-muted hover:text-foreground",
                 )}
               >
                 {skill.Type}
