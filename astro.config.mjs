@@ -1,53 +1,46 @@
-// @ts-check
-import { defineConfig } from "astro/config";
-
+import icon from "astro-icon";
+import mdx from "@astrojs/mdx";
 import react from "@astrojs/react";
+import rehypeSlug from "rehype-slug";
+import sitemap from "@astrojs/sitemap";
+import robotsTxt from "astro-robots-txt";
+import { defineConfig } from "astro/config";
+import vercel from "@astrojs/vercel";
+import rehypePrettyCode from "rehype-pretty-code";
+import tailwindcss from "@tailwindcss/vite";
 
-import tailwind from "@astrojs/tailwind";
-
-import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
-  integrations: [
-    react(),
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true, // set to false when using @vercel/analytics@1.4.0
-    },
-  }),
+	output: "static",
+	integrations: [
+		react(),
+		mdx({
+			syntaxHighlight: false,
+			rehypePlugins: [
+				rehypeSlug,
+				[
+					rehypePrettyCode,
+					{
+						theme: "everforest-dark",
+					},
+				],
+			],
+		}),
+		sitemap(),
+		robotsTxt(),
+		icon(),
+	],
+
+	site: "https://lakshb.dev",
+
+	adapter: vercel({
+		webAnalytics: {
+			enabled: true,
+		},
+		includeFiles: ["./public/fonts/Satoshi-Medium.ttf", "./public/fonts/Satoshi-Bold.ttf"],
+	}),
+
+	vite: {
+		plugins: [tailwindcss()],
+	},
 });
-// // @ts-check
-// import { defineConfig } from "astro/config";
-
-// import react from "@astrojs/react";
-
-// import tailwind from "@astrojs/tailwind";
-
-// import vercel from "@astrojs/vercel";
-
-// export default defineConfig({
-//   output: "server",
-//   adapter: vercel({
-//     webAnalytics: {
-//       enabled: true,
-//     },
-//   }),
-//   server: {
-//     host: true,
-//     port: 4321,
-//   },
-
-//   integrations: [
-//     react(),
-//     tailwind({
-//       applyBaseStyles: false,
-//     }),
-//   ],
-
-//   // adapter: vercel()
-// });

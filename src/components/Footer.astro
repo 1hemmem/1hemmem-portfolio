@@ -1,5 +1,19 @@
-<footer class="max-w-3xl mx-auto flex justify-between items-center px-4">
-  <p class="tracking-tight mt-16 mb-4 pb-4 pl-1">
-    Copyright © 2024 Hemmem CH.
-  </p>
+---
+import Nowtime from "./react/NowTime.tsx";
+import { MdOutlineTipsAndUpdates } from "react-icons/md";
+---
+
+<footer class="pt-8">
+	<hr class="bg-title h-px border-0" />
+	<div class="flex items-center justify-between">
+		<div class="mx-1 flex gap-1 pt-4 md:mx-3">
+			<div class="flex items-center gap-1">
+				<MdOutlineTipsAndUpdates className="text-title" size={16} />
+				<span class="text-body text-xs">Last updated on April 8, 2025</span>
+			</div>
+		</div>
+		<div class="mx-1 flex items-center justify-between pt-4 md:mx-3">
+			<Nowtime client:load />
+		</div>
+	</div>
 </footer>
