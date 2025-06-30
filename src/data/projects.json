@@ -1,8 +1,9 @@
 [
   {
-    "Title": "Make It Yourself",
-    "Description": "A web application that enables you to make your own domain expert chatbot.",
-    "Technologies": [
+    "'id": 1,
+    "title": "Make It Yourself",
+    "description": "A web application that enables you to make your own domain expert chatbot.",
+    "technologies": [
       "Ollama",
       "Python",
       "FastApi",
@@ -11,12 +12,13 @@
       "Transformers",
       "Ngrok"
     ],
-    "Link": "https://github.com/1hemmem/make-it-yourself"
+    "link": "https://github.com/1hemmem/make-it-yourself"
   },
   {
-    "Title": "Algerian License Plate Recegnition System",
-    "Description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
-    "Technologies": [
+    "id": 2,
+    "title": "Algerian License Plate Recegnition System",
+    "description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
+    "technologies": [
       "Python",
       "OpenCv",
       "Yolo",
@@ -24,12 +26,13 @@
       "Asyncio",
       "Gemini Api"
     ],
-    "Link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
+    "link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
   },
   {
-    "Title": "Real-Time Collaboration Platform",
-    "Description": "A web application that enable users to collaborate and share documents in real time.",
-    "Technologies": [
+    "id": 3,
+    "title": "Real-Time Collaboration Platform",
+    "description": "A web application that enable users to collaborate and share documents in real time.",
+    "technologies": [
       "Typescript",
       "NextJs",
       "Tailwind",
@@ -37,12 +40,13 @@
       "Liveblocks",
       "Supabase"
     ],
-    "Link": "https://github.com/1hemmem/Real-Time-Document-Collaboration-Platform"
+    "link": "https://github.com/1hemmem/Real-Time-Document-Collaboration-Platform"
   },
   {
-    "Title": "1hemmem",
-    "Description": "This website you are in.",
-    "Technologies": ["javascript", "React", "Tailwind", "Vercel"],
-    "Link": "https://github.com/1hemmem/1hemmem-portfolio"
+    "id": 4,
+    "title": "1hemmem",
+    "description": "This website you are in.",
+    "technologies": ["javascript", "React", "Tailwind", "Vercel"],
+    "link": "https://github.com/1hemmem/1hemmem-portfolio"
   }
 ]

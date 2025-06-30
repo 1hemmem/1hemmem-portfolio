@@ -1,26 +1,38 @@
 [
-	{
-		"id": 1,
-		"title": "Vecto3d",
-		"description": "Transform your 2D vectors to 3D models",
-		"link": "https://vecto3d.xyz"
-	},
-	{
-		"id": 2,
-		"title": "Next.js + Notion Waitlist Template",
-		"description": "A simple Next.js and Notion as CMS waitlist template",
-		"link": "https://vercel.com/templates/next.js/next-js-waitlist-with-notion-cms"
-	},
-	{
-		"id": 3,
-		"title": "KalaKunj",
-		"description": "Traditional Indian art showcase in AR",
-		"link": "https://github.com/lakshaybhushan/kalakunj"
-	},
-	{
-		"id": 4,
-		"title": "voyageVR",
-		"description": "End traveller focused VR tourism",
-		"link": "https://github.com/lakshaybhushan/voyageVR"
-	}
+  {
+    "'id": 1,
+    "title": "Make It Yourself",
+    "description": "A web application that enables you to make your own domain expert chatbot.",
+    "link": "https://github.com/1hemmem/make-it-yourself"
+  },
+  {
+    "id": 2,
+    "title": "Algerian License Plate Recegnition System",
+    "description": "A system for detecting cars and license plates, extracting plate text with OCR, and storing images, text, and timestamps in a folder.",
+    "link": "https://github.com/1hemmem/Algerian-License-Plates-Recegnition-System"
+  },
+  {
+    "id": 3,
+    "title": "Algerian eCommerce Backend (Microservices)",
+    "description": "Containerized microservices (user, product, cart, order, payment) with Chargily (CIB/Edahabia) and Cash on Delivery support. Uses Traefik, Redis, and RabbitMQ.",
+    "link": null
+  },
+  {
+    "id": 4,
+    "title": "Real-Time Collaboration Platform",
+    "description": "A web application that enable users to collaborate and share documents in real time.",
+    "link": "https://github.com/1hemmem/Real-Time-Document-Collaboration-Platform"
+  },
+  {
+    "id": 5,
+    "title": "TTK ePay Python Client",
+    "description": "Python SDK for TTK ePay payment gateway. Handles secure API communication (request signing) and supports payment operations (initiation, verification, status checks).",
+    "link": "https://github.com/deploily/ttk-epay-python-client"
+  },
+  {
+    "id": 6,
+    "title": "1hemmem",
+    "description": "This website you are in.",
+    "link": "https://github.com/1hemmem/1hemmem-portfolio"
+  }
 ]

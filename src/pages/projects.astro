@@ -1,13 +1,23 @@
 ---
-import Connect from '../components/Connect.astro'
+import projectsData from "../constants/projects.json";
+import ProjectCard from "../components/ProjectCard.astro";
 import Layout from "../layouts/Layout.astro";
-import "../styles/globals.css";
-import ProjectsPage from "@/components/Projects.astro";
+
+const projects = projectsData;
 ---
 
-<Layout class="" title="Projects">
-  <div class="p-4">
-    <ProjectsPage/>
-    <Connect/>
-</div>
+<Layout title="1hemmem • Projects">
+  <section class="pt-8">
+    <h1 class="text-primary font-serif text-[2.5rem] tracking-tight">
+      Projects
+    </h1>
+    <h2 class="text-title text-base tracking-tight">
+      Projects are my go-to for learning new technologies and applying them.
+      Each project represents a journey of exploration and skill-building.
+    </h2>
+    <br />
+    <div class="pt-1.5">
+      {projects.map((project) => <ProjectCard project={project} />)}
+    </div>
+  </section>
 </Layout>
