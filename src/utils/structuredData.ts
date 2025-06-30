@@ -57,7 +57,7 @@ export function getArticleSchema(post: CollectionEntry<"thoughts">) {
     },
     author: {
       "@type": "Person",
-      name: "Lakshay Bhushan",
+      name: "Charen bahaeddine hemmem",
       url: import.meta.env.SITE,
       image: import.meta.env.SITE + avatar.src,
     },

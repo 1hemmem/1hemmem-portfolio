@@ -1,0 +1,96 @@
+{
+  "environment": [
+    {
+      "name": "Obsidian",
+      "description": "Markdown-based knowledge management.",
+      "link": "https://obsidian.md/"
+    },
+    {
+      "name": "Brave Browser",
+      "description": "Ad-free, fast browser.",
+      "link": "https://brave.com/"
+    },
+    {
+      "name": "Fedora Linux",
+      "description": "Linux distro with DNF as package manager.",
+      "link": "https://getfedora.org/"
+    },
+    {
+      "name": "Hyperland",
+      "description": "Wayland tiling window manager.",
+      "link": "https://hypr.land/"
+    },
+    {
+      "name": "Lazyvim (neovim)",
+      "description": "Preconfigured Neovim setup.",
+      "link": "https://lazyvim.github.io/"
+    },
+    {
+      "name": "Alacritty",
+      "description": "GPU-accelerated terminal.",
+      "link": "https://alacritty.org/"
+    },
+    {
+      "name": "LazyGit",
+      "description": "Terminal Git UI.",
+      "link": "https://github.com/jesseduffield/lazygit"
+    }
+  ],
+  "techStack": [
+    {
+      "name": "GitHub",
+      "description": "Code hosting and collaboration.",
+      "link": "https://github.com/"
+    },
+    {
+      "name": "TypeScript",
+      "description": "Typed JavaScript.",
+      "link": "https://www.typescriptlang.org/"
+    },
+    {
+      "name": "React",
+      "description": "UI library for building interfaces.",
+      "link": "https://react.dev/"
+    },
+    {
+      "name": "Next.js",
+      "description": "React framework for full-stack apps.",
+      "link": "https://nextjs.org/"
+    },
+    {
+      "name": "shadcn/ui",
+      "description": "Accessible React components.",
+      "link": "https://ui.shadcn.com/"
+    },
+    {
+      "name": "Tailwind CSS",
+      "description": "Utility-first CSS framework.",
+      "link": "https://tailwindcss.com/"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "Relational database.",
+      "link": "https://www.postgresql.org/"
+    },
+    {
+      "name": "Docker",
+      "description": "Containerized environments.",
+      "link": "https://www.docker.com/"
+    },
+    {
+      "name": "Python",
+      "description": "Scripting and automation.",
+      "link": "https://www.python.org/"
+    },
+    {
+      "name": "FastAPI",
+      "description": "Fast web APIs with Python.",
+      "link": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "name": "MongoDB",
+      "description": "NoSQL document database.",
+      "link": "https://www.mongodb.com/"
+    }
+  ]
+}
