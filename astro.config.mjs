@@ -11,36 +11,39 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-	output: "static",
-	integrations: [
-		react(),
-		mdx({
-			syntaxHighlight: false,
-			rehypePlugins: [
-				rehypeSlug,
-				[
-					rehypePrettyCode,
-					{
-						theme: "everforest-dark",
-					},
-				],
-			],
-		}),
-		sitemap(),
-		robotsTxt(),
-		icon(),
-	],
+  output: "static",
+  integrations: [
+    react(),
+    mdx({
+      syntaxHighlight: false,
+      rehypePlugins: [
+        rehypeSlug,
+        [
+          rehypePrettyCode,
+          {
+            theme: "everforest-dark",
+          },
+        ],
+      ],
+    }),
+    sitemap(),
+    robotsTxt(),
+    icon(),
+  ],
 
-	site: "https://lakshb.dev",
+  site: "https://1hemmem.site",
 
-	adapter: vercel({
-		webAnalytics: {
-			enabled: true,
-		},
-		includeFiles: ["./public/fonts/Satoshi-Medium.ttf", "./public/fonts/Satoshi-Bold.ttf"],
-	}),
+  adapter: vercel({
+    webAnalytics: {
+      enabled: true,
+    },
+    includeFiles: [
+      "./public/fonts/Satoshi-Medium.ttf",
+      "./public/fonts/Satoshi-Bold.ttf",
+    ],
+  }),
 
-	vite: {
-		plugins: [tailwindcss()],
-	},
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });
