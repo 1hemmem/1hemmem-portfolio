@@ -4,7 +4,7 @@ import {
   type WebSite,
   type WithContext,
 } from "schema-dts";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/hemmem.jpg";
 import type { CollectionEntry } from "astro:content";
 
 export const thoughtsWebsite: WithContext<WebSite> = {
