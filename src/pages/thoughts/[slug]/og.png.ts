@@ -19,6 +19,10 @@ export async function GET({ props }: Props) {
     path.resolve(process.cwd(), "./public/fonts/Satoshi-Medium.ttf"),
   );
 
+  // Determine the base URL
+  const baseUrl = import.meta.env.SITE || "http://localhost:4321";
+  const faviconUrl = `${baseUrl}/favicon.svg`;
+
   const html = React.createElement(
     "div",
     {
@@ -60,7 +64,7 @@ export async function GET({ props }: Props) {
         },
         React.createElement("img", {
           tw: "w-6 h-6 rounded-full mr-4",
-          src: "../../../../public/favicon.svg",
+          src: faviconUrl,
           alt: "CHAREN Bahaeddine hemmem",
         }),
         React.createElement(
