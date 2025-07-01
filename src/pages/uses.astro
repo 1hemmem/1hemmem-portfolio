@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Layout.astro";
+import usesData from "../constants/uses.json";
+const { environment, techStack } = usesData;
+---
+
+<Layout title="1hemmem • Uses">
+  <h1 class="text-primary font-serif text-[2.5rem] tracking-tight">Uses</h1>
+  <h2 class="text-title text-base tracking-tight">
+    What I use daily in developement to keep the process both <span
+      class="font-bold"
+      >productive
+    </span> and <span class="font-bold">fun</span>.
+  </h2>
+  <section class="pt-8">
+    <h2 class="text-title text-base font-medium">Environment</h2>
+    <ul class="pt-3 text-sm text-body list-disc list-inside space-y-1">
+      {
+        environment.map((item) => (
+          <li>
+            {item.link ? (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-title"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <strong>{item.name}</strong>
+            )}
+            {" – "}
+            {item.description}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+
+  <section class="pt-8">
+    <h2 class="text-title text-base font-medium">Tech Stack</h2>
+    <ul class="pt-3 text-sm text-body list-disc list-inside space-y-1">
+      {
+        techStack.map((item) => (
+          <li>
+            {item.link ? (
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="underline text-title"
+              >
+                {item.name}
+              </a>
+            ) : (
+              <strong>{item.name}</strong>
+            )}
+            {" – "}
+            {item.description}
+          </li>
+        ))
+      }
+    </ul>
+  </section>
+</Layout>
