@@ -103,7 +103,15 @@ const socials = socialsData;
     </div>
   </section>
   <section class="pt-8">
-    <h2 class="text-title font-medium tracking-tight">Thoughts</h2>
+    <div class="flex items-center justify-between">
+      <h2 class="text-title font-medium tracking-tight">Thoughts</h2>
+      <a
+        href="/thoughts"
+        class="text-body hover:text-primary text-sm font-medium hover:underline underline-offset-2 transition-all duration-150 ease-in-out"
+      >
+        See all thoughts →
+      </a>
+    </div>
     <div class="pt-1.5 flex flex-col">
       {
         allPosts.slice(0, 3).map((post: Post) => (
