@@ -8,6 +8,7 @@ import ThoughtsNav from "../components/ThoughtsNav.astro";
 import BottomBlur from "../components/BottomBlur.astro";
 import type { CollectionEntry } from "astro:content";
 import Metadata from "../components/Metadata.astro";
+import Analytics from "../components/Analytics.astro";
 
 interface Props {
   post: CollectionEntry<"thoughts">;
@@ -33,6 +34,7 @@ if (!post) {
 <!doctype html>
 <html lang="en" class="bg-bgColor">
   <head>
+    <Analytics/>
     <meta charset="UTF-8" />
     <meta
       name="description"
