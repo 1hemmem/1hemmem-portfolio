@@ -25,12 +25,18 @@
   },
   {
     "id": 5,
+    "title": "American Corner Website",
+    "description": "A modern, responsive website for the American Corner in Oran, Algeria, featuring an admin panel and a rich text editor for easy blog post management.",
+    "link": "https://github.com/1hemmem/amrican-corner-oran/"
+  },
+  {
+    "id": 6,
     "title": "TTK ePay Python Client",
     "description": "Python SDK for TTK ePay payment gateway. Handles secure API communication (request signing) and supports payment operations (initiation, verification, status checks).",
     "link": "https://github.com/deploily/ttk-epay-python-client"
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "1hemmem",
     "description": "This website you are in.",
     "link": "https://github.com/1hemmem/1hemmem-portfolio"
