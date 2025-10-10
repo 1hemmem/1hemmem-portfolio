@@ -19,9 +19,10 @@ export async function GET({ props }: Props) {
     path.resolve(process.cwd(), "./public/fonts/Satoshi-Medium.ttf"),
   );
 
-  // Determine the base URL
-  const baseUrl = import.meta.env.SITE || "http://localhost:4321";
-  const faviconUrl = `${baseUrl}/favicon.svg`;
+  // Read the favicon as a local file and convert to base64
+  const faviconPath = path.resolve(process.cwd(), "./public/favicon.svg");
+  const faviconBuffer = fs.readFileSync(faviconPath);
+  const faviconBase64 = `data:image/svg+xml;base64,${faviconBuffer.toString("base64")}`;
 
   const html = React.createElement(
     "div",
@@ -64,8 +65,10 @@ export async function GET({ props }: Props) {
         },
         React.createElement("img", {
           tw: "w-6 h-6 rounded-full mr-4",
-          src: faviconUrl,
+          src: faviconBase64,
           alt: "CHAREN Bahaeddine hemmem",
+          width: 24,
+          height: 24,
         }),
         React.createElement(
           "div",
