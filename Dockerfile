@@ -16,24 +16,21 @@ COPY . .
 # Use --bun flag to ensure Bun's runtime is used for the build
 RUN bun run build
 
-# Stage 2: Create the production image
+# Stage 2: Create the production image with a static file server
 FROM oven/bun:latest
 
 WORKDIR /app
 
-# Copy only the necessary files from the builder stage
+# Install serve package globally for serving static files
+RUN bun add -g serve
+
+# Copy only the built static files from the builder stage
 COPY --from=builder /app/dist ./dist
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/bun.lockb ./bun.lockb
 
-# Install production dependencies (if any are needed separately for runtime)
-# For Astro's static site generation, this might not be strictly necessary
-# but can be useful for SSR or specific runtime dependencies.
-RUN bun install --frozen-lockfile --production
-
-# Expose the port Astro listens on (default is 4321)
+# Expose the port
 EXPOSE 4321
 
-# Command to run the Astro application in production mode
-# The preview command serves the built static files
-CMD ["bun", "run", "preview"]
+# Serve the static files on 0.0.0.0:4321
+# -s flag enables single-page application mode (redirects 404s to index.html)
+# -l flag sets the port and binds to all interfaces
+CMD ["serve", "dist", "-s", "-l", "4321"]
