@@ -34,7 +34,6 @@ RUN bun install --frozen-lockfile --production
 # Expose the port Astro listens on (default is 4321)
 EXPOSE 4321
 
-# Command to run the Astro application
-# For static sites, you might use a static file server like `serve`
-# For SSR, you would use `bun run start` or a custom start script
-CMD ["bun", "run", "start"]
+# Command to run the Astro application in production mode
+# The preview command serves the built static files
+CMD ["bun", "run", "preview"]
