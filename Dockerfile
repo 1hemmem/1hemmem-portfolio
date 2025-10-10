@@ -1,41 +1,43 @@
-# Stage 1: Build the Astro project
-FROM oven/bun:latest AS builder
+# -------- Builder stage --------
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Copy package.json and bun.lockb to install dependencies
-COPY package.json bun.lockb ./
+RUN corepack enable && corepack prepare pnpm@latest --activate
 
-# Install dependencies using Bun
-RUN bun install --frozen-lockfile
+# Copy package files first for better caching
+COPY package.json pnpm-lock.yaml ./
 
-# Copy the rest of the application files
+# Install all dependencies (including dev deps for build)
+RUN pnpm install --frozen-lockfile
+
+# Copy source code and build
 COPY . .
+RUN pnpm build
 
-# Build the Astro project
-# Use --bun flag to ensure Bun's runtime is used for the build
-RUN bun run build
-
-# Stage 2: Create the production image
-FROM oven/bun:latest
+# -------- Production stage --------
+FROM node:18-alpine AS production
 
 WORKDIR /app
 
-# Copy package.json and bun.lockb for production dependencies
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/bun.lockb ./bun.lockb
+# Create non-root user
+RUN addgroup --system --gid 1001 nodejs && \
+  adduser --system --uid 1001 astro
 
-# Install production dependencies
-RUN bun install --frozen-lockfile --production
+# Set environment variables
+ENV NODE_ENV=production
+ENV PORT=4321
+ENV HOST=0.0.0.0
 
-# Copy the built static files from the builder stage
-COPY --from=builder /app/dist ./dist
+# Copy built static files and node_modules from builder stage
+COPY --from=builder --chown=astro:nodejs /app/dist ./dist
+COPY --from=builder --chown=astro:nodejs /app/node_modules ./node_modules
+COPY --from=builder --chown=astro:nodejs /app/package.json ./package.json
 
-# Install curl for healthcheck
-RUN apt-get update && apt-get install -y curl && rm -rf /var/lib/apt/lists/*
+# Switch to non-root user
+USER astro
 
-# Expose the port
 EXPOSE 4321
 
-# Command to run the Astro application in production mode
-CMD ["bun", "run", "start"]
+# Use astro preview to serve the built static site
+CMD ["node", "node_modules/astro/astro.js", "preview", "--host", "0.0.0.0", "--port", "4321"]
