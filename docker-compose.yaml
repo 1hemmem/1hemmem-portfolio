@@ -14,3 +14,14 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    networks:
+      - dokploy-network
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.portfolio.rule=Host(`1hemmem.site`)"
+      - "traefik.http.routers.portfolio.entrypoints=websecure"
+      - "traefik.http.routers.portfolio.tls.certResolver=letsencrypt"
+      - "traefik.http.services.portfolio.loadbalancer.server.port=4321"
+networks:
+  dokploy-network:
+    external: true
