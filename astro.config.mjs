@@ -5,7 +5,6 @@ import rehypeSlug from "rehype-slug";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
 import { defineConfig } from "astro/config";
-import vercel from "@astrojs/vercel";
 import rehypePrettyCode from "rehype-pretty-code";
 import tailwindcss from "@tailwindcss/vite";
 
@@ -32,16 +31,6 @@ export default defineConfig({
   ],
 
   site: "https://1hemmem.site",
-
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-    includeFiles: [
-      "./public/fonts/Satoshi-Medium.ttf",
-      "./public/fonts/Satoshi-Bold.ttf",
-    ],
-  }),
 
   vite: {
     plugins: [tailwindcss()],

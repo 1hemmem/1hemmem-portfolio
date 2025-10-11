@@ -16,31 +16,37 @@ COPY . .
 RUN pnpm build
 
 # -------- Production stage --------
-FROM node:18-alpine AS production
+FROM nginx:alpine AS production
 
-WORKDIR /app
+# Copy built static files from builder stage
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Install wget for healthcheck
-RUN apk add --no-cache wget
+# Create nginx config for proper routing and caching
+RUN echo 'server { \
+    listen 80; \
+    listen [::]:80; \
+    server_name _; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    \
+    # Handle SPA routing \
+    location / { \
+        try_files $uri $uri/ $uri.html /index.html; \
+    } \
+    \
+    # Cache static assets \
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ { \
+        expires 1y; \
+        add_header Cache-Control "public, immutable"; \
+    } \
+    \
+    # Gzip compression \
+    gzip on; \
+    gzip_vary on; \
+    gzip_min_length 1024; \
+    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml+rss application/javascript application/json; \
+}' > /etc/nginx/conf.d/default.conf
 
-# Create non-root user
-RUN addgroup --system --gid 1001 nodejs && \
-  adduser --system --uid 1001 astro
+EXPOSE 80
 
-# Set environment variables
-ENV NODE_ENV=production
-ENV PORT=4321
-ENV HOST=0.0.0.0
-
-# Copy built static files and node_modules from builder stage
-COPY --from=builder --chown=astro:nodejs /app/dist ./dist
-COPY --from=builder --chown=astro:nodejs /app/node_modules ./node_modules
-COPY --from=builder --chown=astro:nodejs /app/package.json ./package.json
-
-# Switch to non-root user
-USER astro
-
-EXPOSE 4321
-
-# Use astro preview to serve the built static site
-CMD ["node", "node_modules/astro/astro.js", "preview", "--host", "0.0.0.0", "--port", "4321"]
+CMD ["nginx", "-g", "daemon off;"]
